@@ -1,16 +1,11 @@
 
 import React from 'react'
 import "./Tarjetas.css"
+import { Link } from 'react-router-dom'
 
-const Tarjetas = ({ titles, ruta }) => {
+const Tarjetas = ({ titles, ruta, descripcion, id }) => {
     return (
-
-    
         <>
-
-           
-
-
             <main className='container'>
 
                 <div className="card"
@@ -22,10 +17,13 @@ const Tarjetas = ({ titles, ruta }) => {
 
                     <div className="card-body">
                         <h5 className="card-title">{titles}</h5>
+                        <p className='cart-text'>{descripcion}description</p>
 
-                        <a href="#" className="btn btn-primary">
-                            Go somewhere
-                        </a>
+                        <Link className="btn btn-primary" to={`/Tarjetas/${id}`}>
+                            Ver más</Link>
+
+                      
+
                     </div>
 
                 </div>

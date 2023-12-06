@@ -1,5 +1,6 @@
 .main-footer {
     background: black;
+ 
     width: 100%;
 }
 
@@ -41,19 +42,19 @@
 
 .creado {
     
-    width: 560px;
+    width: 280px;
     display: flex;
 }
 
 p {
-    width: 560px;
+   
     margin: 0;
-    font-size: 18px;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
 }

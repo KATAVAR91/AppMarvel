@@ -5,6 +5,7 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: rgb(227, 57, 57);
+
 }
 
 .marvel-title-container {
@@ -21,6 +22,7 @@
     color: white;
     text-align: center;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+   
 }
 
 .contenedorinicio {

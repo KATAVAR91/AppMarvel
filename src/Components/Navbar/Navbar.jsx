@@ -7,13 +7,15 @@ const Navbar = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg text-bg-dark" >
+         
+            
 
          
 
                 <div className="container-fluid">
                     <NavLink
                         className="navbar-brand textobtn"
-                        activeclassName="activo"
+                        activeclassname="activo"
                         to='/tarjetas'>
                         Home
                     </NavLink>
@@ -80,8 +82,8 @@ const Navbar = () => {
             <ul>
               <li className="nav-item1">
                 <NavLink
-                  className="nav-link textobtn no-list-style" // Agregamos una nueva clase
-                  activeClassName="activo"
+                  className="nav-link textobtn no-list-style" 
+                  activeclassname="activo"
                   to='/'>
                   Iniciar Sesión
                 </NavLink>

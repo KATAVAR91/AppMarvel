@@ -1,0 +1,43 @@
+.content-detail {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
+    background-color:rgb(0, 0, 0);
+    border-radius:15px;
+
+}
+
+.content-img {
+    width: 350px;
+}
+
+.img-card {
+    min-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Content-titulo{
+   
+    padding: 50px;
+   
+}
+
+h2{
+    color: red;
+}
+
+p{
+    /* width: 214px; */
+    color: white;
+  
+}
+
+.text-center-loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
