@@ -14,7 +14,7 @@ const App = () => {
     <>
       <Navbar />
       <div className="marvel-title-container">
-        <h2 className="marvel-title">MARVEL</h2> </div>
+        <h1 className="marvel-title">MARVEL</h1> </div>
 
       <Routes>
         <Route path='/Home' element={<Home />} />
