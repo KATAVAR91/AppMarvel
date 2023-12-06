@@ -8,18 +8,21 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg text-bg-dark" >
 
-
+                <div className='contenedor-inicio-home'>
+                    <ul>
+                        <li className="nav-item">
+                            <NavLink
+                                className="nav-link textobtn"
+                                activeclassname="activo"
+                                aria-current="page"
+                                to="/Home">Home</NavLink>
+                        </li>
+                    </ul>
+                </div>
 
 
 
                 <div className="container-fluid">
-                    <li className="nav-item">
-                        <NavLink
-                            className="nav-link textobtn"
-                            activeclassname="activo"
-                            aria-current="page"
-                            to="/Home">Home</NavLink>
-                    </li>
 
                     <button
                         className="navbar-toggler"
@@ -81,9 +84,9 @@ const Navbar = () => {
                     </div> */}
 
 
-                    <div className='contenedorinicio'>
+                    <div className='contenedor-inicio'>
                         <ul>
-                            <li className="nav-item1">
+                            <li className="nav-item">
                                 <NavLink
                                     className="nav-link textobtn no-list-style"
                                     activeclassname="activo"

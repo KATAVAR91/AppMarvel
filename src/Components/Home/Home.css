@@ -1,0 +1,35 @@
+.wrapper{
+    background-color: blueviolet;
+    flex: 1;
+    /* display: flex; */
+    /* align-items: center; */
+    /* margin: 21px; */
+    /* padding: 0; */
+    width: 100hv;
+    height: 100hv;
+    /* align-items: center; */
+    overflow: hidden;
+    display: block;
+
+
+}
+
+.carousel-indicators {
+    position: relative;
+    color: white;
+    background-color: dodgerblue;
+    width: 100hv;
+    /* min-height: 100%; */
+    /* flex: 1; */
+    margin: 55px;
+    padding: 80px;
+}
+
+/* .carousel-indicators{
+    padding: 80px;
+    margin-top: 550px;
+    
+    width: 800px;
+    height: auto;
+    background-color: blue;
+} */

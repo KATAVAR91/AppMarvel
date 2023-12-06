@@ -64,7 +64,7 @@ const DetailTarjetas = () => {
             <div className='Content-titulo'>
                 <h2>{detalle.title}</h2>
                 <h3>Fecha de Publicación:</h3>
-                <p>
+                <p className='text-publication'>
                     {detalle.dates[0].date}
                 </p>
 
