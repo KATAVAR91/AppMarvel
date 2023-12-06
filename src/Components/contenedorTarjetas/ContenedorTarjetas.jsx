@@ -35,10 +35,10 @@ const ContenedorTarjetas = () => {
         {datos.length === 0 ? (
           <div className='text-center-loading'>
           <div
-            class="spinner-grow text-light"
+            className="spinner-grow text-light"
             role="status"
           >
-            <span class="visually-hidden">Cargando...</span>
+            <span className="visually-hidden">Cargando...</span>
           </div>
           </div>
         ) : (

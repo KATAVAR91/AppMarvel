@@ -40,11 +40,11 @@ const DetailTarjetas = () => {
                 <div
                     className="spinner-grow text-light"
                     role="status">
-                    <span class="visually-hidden">Cargando...</span>
+                    <span className="visually-hidden">Cargando...</span>
                 </div>
 
                 <div
-                    class="spinner-grow text-light"
+                    className="spinner-grow text-light"
                     role="status"
                 >
                     <span className="visually-hidden">Cargando...</span>

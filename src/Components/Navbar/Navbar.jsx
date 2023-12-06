@@ -7,18 +7,19 @@ const Navbar = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg text-bg-dark" >
-         
-            
 
-         
+
+
+
 
                 <div className="container-fluid">
-                    <NavLink
-                        className="navbar-brand textobtn"
-                        activeclassname="activo"
-                        to='/tarjetas'>
-                        Home
-                    </NavLink>
+                    <li className="nav-item">
+                        <NavLink
+                            className="nav-link textobtn"
+                            activeclassname="activo"
+                            aria-current="page"
+                            to="/Home">Home</NavLink>
+                    </li>
 
                     <button
                         className="navbar-toggler"
@@ -36,9 +37,11 @@ const Navbar = () => {
                         id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link textobtn"
+                                <NavLink
+                                    className="nav-link textobtn"
+                                    activeclassname="activo"
                                     aria-current="page"
-                                    href="#">Comics</a>
+                                    to="/tarjetas">Comics</NavLink>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link textobtn"
@@ -62,7 +65,7 @@ const Navbar = () => {
                                 </NavLink>
                             </li> */}
                         </ul>
-                        
+
                     </div>
                     {/* <div className='contenedorinicio'>
                         <ul>
@@ -78,23 +81,23 @@ const Navbar = () => {
                     </div> */}
 
 
-<div className='contenedorinicio'>
-            <ul>
-              <li className="nav-item1">
-                <NavLink
-                  className="nav-link textobtn no-list-style" 
-                  activeclassname="activo"
-                  to='/'>
-                  Iniciar Sesión
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+                    <div className='contenedorinicio'>
+                        <ul>
+                            <li className="nav-item1">
+                                <NavLink
+                                    className="nav-link textobtn no-list-style"
+                                    activeclassname="activo"
+                                    to='/'>
+                                    Iniciar Sesión
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
             </nav>
 
-           
+
         </>
     )
 }

@@ -19,7 +19,7 @@ const Tarjetas = ({ titles, ruta, descripcion, id }) => {
                         <h5 className="card-title">{titles}</h5>
                         <p className='cart-text'>{descripcion}description</p>
 
-                        <Link className="btn btn-primary" to={`/Tarjetas/${id}`}>
+                        <Link className="btn btn-primary" to={`/DetailTarjetas/${id}`}>
                             Ver más</Link>
 
                       
