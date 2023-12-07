@@ -1,12 +1,12 @@
-import React from 'react'
-import "./Login.css"
+import React, { useState } from 'react';
+import './Login.css';
 
-const Login = () => {
+const Login = ({ handleLogin, usuario, setUsuario, password, setPassword, error }) => {
     return (
         <>
-        
-       
-            
+
+
+
 
             <main className='CotainerLogin'>
 
@@ -20,25 +20,34 @@ const Login = () => {
                         <input
                             type="text"
                             className="form-control"
-                            placeholder="Usuario"
-                            aria-label="Username"
-                            aria-describedby="basic-addon1" />
+                            placeholder="Ingresa Usuario"
+                            aria-label=" Username"
+                            aria-describedby="basic-addon1"
+                            value={usuario}
+                            onChange={(e) => {
+                                setUsuario(e.target.value)
+                            }}
+                        />
                     </div>
 
                     <div className="input-group mb-3">
                         <span className="input-group-text"
                             id="basic-addon1">
-                            Tu contreña
+                            Tu contraseña
                         </span>
                         <input
-                            type="text"
+                            type="password"
                             className="form-control"
-                            placeholder="Contraseña"
+                            placeholder="Ingresa Contraseña"
                             aria-label="Username"
-                            aria-describedby="basic-addon1" />
+                            aria-describedby="basic-addon1"
+                            value={password}
+                            onChange={(e) => {
+                                setPassword(e.target.value)
+                            }} />
                     </div>
-                    <button type="button" class="btn btn-dark textobtn">Inicio Sesión</button>
-                  
+                    <button onClick={handleLogin} type="button" className="btn btn-dark textobtn">Inicio Sesión</button>
+                    {error && <p>{error}</p>}
                 </div>
 
             </main>

@@ -69,6 +69,8 @@ const DetailTarjetas = () => {
                 </p>
 
             </div>
+
+           
         </main>
     )
 }

@@ -1,12 +1,19 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import "./Navbar.css"
+import React from 'react';
+import { Link, NavLink, Navigate } from 'react-router-dom';
 
-
-const Navbar = () => {
+const Navbar = ({ handleLogout }) => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg text-bg-dark" >
+            <nav className="navbar navbar-expand-lg text-bg-dark">
+         
+
+
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        {localStorage.getItem("isLoggedIn") && (
+                            
+                            
+                            <>
 
                 <div className='contenedor-inicio-home'>
                     <ul>
@@ -20,8 +27,6 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-
-
                 <div className="container-fluid">
 
                     <button
@@ -34,17 +39,17 @@ const Navbar = () => {
                         aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-
                     <div
                         className="collapse navbar-collapse"
                         id="navbarNav">
+
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <NavLink
                                     className="nav-link textobtn"
                                     activeclassname="activo"
                                     aria-current="page"
-                                    to="/tarjetas">Comics</NavLink>
+                                    to="/ContenedorTarjetas">Comics</NavLink>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link textobtn"
@@ -58,51 +63,30 @@ const Navbar = () => {
                                 <a className="nav-link textobtn"
                                     href="#">Creadores</a>
                             </li>
-
-                            {/* <li className="nav-item">
-                                <NavLink
-                                    className="nav-link textobtn"
-                                    activeclassname="activo"
-                                    to='/'>
-                                    Iniciar Sesión
-                                </NavLink>
-                            </li> */}
-                        </ul>
-
-                    </div>
-                    {/* <div className='contenedorinicio'>
-                        <ul>
-                         <li className="nav-item1">
-                                <NavLink
-                                    className="nav-link textobtn"
-                                    activeclassname="activo"
-                                    to='/'>
-                                    Iniciar Sesión
-                                </NavLink>
-                            </li>
-                        </ul>
-                    </div> */}
-
-
-                    <div className='contenedor-inicio'>
-                        <ul>
-                            <li className="nav-item">
-                                <NavLink
-                                    className="nav-link textobtn no-list-style"
-                                    activeclassname="activo"
-                                    to='/'>
-                                    Iniciar Sesión
-                                </NavLink>
-                            </li>
                         </ul>
                     </div>
+                </div>
 
+
+                                <li className="nav-item">
+                                    <Link
+                                        style={{ cursor: 'pointer' }}
+                                        className="nav-link"
+                                        activeclassname="activo"
+                                        onClick={handleLogout}
+                                    >
+                                        Cerrar Sesión
+                                    </Link>
+                                </li>
+                            </>
+                        )
+
+                        }
+                    </ul>
                 </div>
             </nav>
-
-
         </>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
