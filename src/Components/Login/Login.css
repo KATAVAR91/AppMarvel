@@ -9,8 +9,15 @@ body {
 
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  
+    margin-top: 4px;
+    font-size: 16px;
+}
+
 .nav-link {
     color: white;
+    width: max-content;
 
 }
 
