@@ -1,20 +1,52 @@
+body {
+    color: white;
+
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #f8f9fa;
+
+}
+
+.nav-link {
+    color: white;
+
+}
+
+.contenedor-inicio-home .btn .btn-dark .textobtn,
+dl,
+ol,
+ul,
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    float: right;
+}
+
+.collapse .navbar-collapse {
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    margin-right: 850px;
+    justify-items: end;
+    text-align: end;
+
+}
 
 
-  
-.CotainerLogin{
+.CotainerLogin {
     display: flex;
     flex: 1;
     height: 100%;
     justify-content: center;
     align-items: center;
-    
-
 }
-
-button{
+.container-logout{
     width: 100%;
-}
-
-.textobtn{
-    color:white
 }

@@ -1,4 +1,10 @@
+body .navbar-collapse .Nav-logout .nav-link.active .navbar .navbar-expand-lg .navbar-nav .nav-item .navbar-nav .nav-link .textobtn .activo .contenedor-inicio .contenedor-inicio-home .no-list-style{
+  color: white; 
+}
 
+#root{
+  color: white;
+}
 
 .contenedor-inicio {
   padding: 0;
@@ -9,7 +15,7 @@
   
 
 }
-
+/* 
 .contenedor-inicio-home{
   padding: 0;
   margin: 0;
@@ -17,6 +23,11 @@
   display: flex;
   font-size: 16px;
   margin-top: auto;
+  color:white;
+
+  list-style-type: none;
+  text-decoration: none;
+
   
 }
 
@@ -28,26 +39,15 @@ dl, ol, ul, a {
   transition: 1s ease all;
 }
 
-/* div.container-fluid {
-  list-style: none;
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-/* ul li .nav-item {
-  list-style: none;
-  text-decoration: none;
-} */
 
 .activo{
   transition: 1s ease all;
+  
 }
 
 .no-list-style {
 
-  color: white;
+  /* color: white; */
   font-size: 18px;
 }
 
@@ -58,5 +58,22 @@ a {
 a:hover {
   background-color: red;
 
+} */
 
-}
+/* .Nav-logout .nav-link.active{
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+ color: white;
+  font-size: 16px;
+  margin-top: auto;
+  margin-left: 100px;
+} */
+
+/* .navbar-expand-lg .navbar-collapse {
+  font-weight: bold;
+} */
+/* 
+ .navbar-collapse {
+ color: white;
+} */

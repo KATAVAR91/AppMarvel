@@ -66,8 +66,8 @@ const Navbar = ({ handleLogout }) => {
                         </ul>
                     </div>
                 </div>
-
-
+<div className='Nav-logout'>
+    <ul>
                                 <li className="nav-item">
                                     <Link
                                         style={{ cursor: 'pointer' }}
@@ -78,6 +78,10 @@ const Navbar = ({ handleLogout }) => {
                                         Cerrar Sesión
                                     </Link>
                                 </li>
+
+    </ul>
+</div>
+                            
                             </>
                         )
 

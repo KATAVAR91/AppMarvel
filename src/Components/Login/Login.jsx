@@ -45,10 +45,16 @@ const Login = ({ handleLogin, usuario, setUsuario, password, setPassword, error 
                             onChange={(e) => {
                                 setPassword(e.target.value)
                             }} />
-                    </div>
+
+                      <div className='container-logout w-100%' >
+
+                    </div > 
                     <button onClick={handleLogin} type="button" className="btn btn-dark textobtn">Inicio Sesión</button>
                     {error && <p>{error}</p>}
                 </div>
+
+                      </div>
+
 
             </main>
         </>
