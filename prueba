@@ -1,0 +1,22 @@
+
+/* .carousel-item {
+    display: block;
+    flex: 1;
+    /* background-color: gray; */
+    align-items: center;
+    
+}
+
+/* img, svg {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.carousel-inner {
+    flex: 1;
+     background-color: aqua; 
+    align-items: center;
+} */ */

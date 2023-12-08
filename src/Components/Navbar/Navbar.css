@@ -6,6 +6,12 @@ body .navbar-collapse .Nav-logout .nav-link.active .navbar .navbar-expand-lg .na
   color: white;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #f8f9fa;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
 .contenedor-inicio {
   padding: 0;
   margin-top: 10px;
@@ -30,10 +36,7 @@ body .navbar-collapse .Nav-logout .nav-link.active .navbar .navbar-expand-lg .na
 
   
 }
-.contenedor-inicio-home .nav-item .contenedor-inicio-home .nav-item .nav-link .textobtn .activo{
- 
-  
-}
+
 
 dl, ol, ul, a {
   list-style-type: none;

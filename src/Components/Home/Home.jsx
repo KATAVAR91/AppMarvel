@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.css';
-import marvelimg from '../../assets/comics.jpg';
-import marvelimg1 from '../../assets/marvel2.jpg';
-import marvelimg2 from '../../assets/marvel3.jpg';
+import marvelimg from '../../assets/comic 4.jpg';
+import marvelimg1 from '../../assets/comics2.jpg';
+import marvelimg2 from '../../assets/comic3.jpg';
 
 const Home = () => {
   return (
@@ -34,15 +34,15 @@ const Home = () => {
 
           <div className='carousel-inner'>
             <div className='carousel-item active'>
-              <img src={marvelimg} className='d-block' alt='Slide 1' />
+              <img src={marvelimg} className='d-block-1' alt='Slide 1' />
             </div>
 
             <div className='carousel-item'>
-              <img src={marvelimg1} className='d-block' alt='Slide 2' />
+              <img src={marvelimg1} className='d-block-2' alt='Slide 2' />
             </div>
 
             <div className='carousel-item'>
-              <img src={marvelimg2} className='d-block' alt='Slide 3' />
+              <img src={marvelimg2} className='d-block-3' alt='Slide 3' />
             </div>
           </div>
 

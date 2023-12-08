@@ -60,7 +60,10 @@ p {
 }
 
 .icono {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     color: white;
+}
+.footer-logo img {
+    width: 80px;
 }
