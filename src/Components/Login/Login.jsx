@@ -10,6 +10,10 @@ const Login = ({ handleLogin, usuario, setUsuario, password, setPassword, error 
 
             <main className='CotainerLogin'>
 
+                <div class="marvel-title-container">
+                    <h1 className="marvel-title">MARVEL</h1>
+                </div>
+
                 <div className='contenedorformulario'>
 
                     <div className="input-group mb-3">
@@ -45,15 +49,11 @@ const Login = ({ handleLogin, usuario, setUsuario, password, setPassword, error 
                             onChange={(e) => {
                                 setPassword(e.target.value)
                             }} />
+                    </div>
+                        <button onClick={handleLogin} type="button" className="btn btn-dark textobtn">Inicio Sesión</button>
+                        {error && <p>{error}</p>}
 
-                      <div className='container-logout w-100%' >
-
-                    </div > 
-                    <button onClick={handleLogin} type="button" className="btn btn-dark textobtn">Inicio Sesión</button>
-                    {error && <p>{error}</p>}
                 </div>
-
-                      </div>
 
 
             </main>

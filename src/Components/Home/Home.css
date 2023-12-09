@@ -1,24 +1,34 @@
 .home-wrapper {
-    display: block;
-    padding: 0;
-    margin: 0;
-    flex: 1;
-    height: 100%; 
-    align-items: center;
+ 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
-
+    align-items: center;
+    flex: 1;
+    background-image: url("/src/assets/comic4.jpg");
 }
 
+.marvel-title-container {
+    text-align: center;
+    color: white;
+}
 
-.marvel-title  {
+.marvel-title {
+    text-align: center;
     padding: 0;
     margin-top: 30px;
     font-size: 70px;
-      font-family: 'Days One', sans-serif;
-      color: white;
-      text-align: center;
-      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
-     
-  }
+    font-family: 'Days One', sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
 
+}
+
+.imgHome{
+    width:600px;
+}
+
+.imagen-marvel{
+   width: 100%;
+}

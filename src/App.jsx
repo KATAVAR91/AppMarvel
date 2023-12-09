@@ -41,9 +41,9 @@ const navigate = useNavigate();
   return (
     <>
       <Navbar handleLogout={handleLogout} />
-      <div className="marvel-title-container">
+      {/* <div className="marvel-title-container">
         <h1 className="marvel-title">MARVEL</h1>
-      </div>
+      </div> */}
       <Routes>
         <Route
           path="/Home"
